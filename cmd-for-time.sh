@@ -4,11 +4,12 @@
 #Start time will be now
 START=`date +%s`
 #This is the duration, in seconds.
-DURATION=30
+DURATION=2
+
 while [ $(( $(date +%s) - $DURATION )) -lt $START ];
 do
     #insert command here
-    
+    echo "Hello, World!"
 done
 
 echo "Done"
