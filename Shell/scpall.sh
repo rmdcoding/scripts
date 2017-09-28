@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Written by Rigobert M.D.
+
 #This script will allow a user to scp a file to every pi (in the cluster)
 
 #Usage: ./scpall.sh [FILENAME] [PATH]

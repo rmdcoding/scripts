@@ -1,4 +1,7 @@
-#!bin/bash/
+#!/bin/bash/
+
+#Written by Rigoberto M.D.
+
 #This script will parse the cycle iterations of each thread and place them
 #in a file. 
 

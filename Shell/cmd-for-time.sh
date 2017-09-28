@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#Written by Rigoberto M.D.
 #This script will run a command for a certain ammount of time
 
 #Start time will be now

@@ -1,4 +1,6 @@
 #!bin/bash/
+
+#Written by Rigoberto M.D.
 #Bash script for generating repetitive/sequential variable name and or file names
 
 i=0
