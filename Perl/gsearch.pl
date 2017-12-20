@@ -4,6 +4,9 @@ use JSON;
 use Data::Dumper;
 use strict;
 
+# Running this program  will make a google search and return the
+# first page of results to the console. 
+
 binmode STDOUT, ':utf8:';
 
 my $query;
