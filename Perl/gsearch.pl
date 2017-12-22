@@ -17,7 +17,7 @@ if (scalar @ARGV >= 2) { # Change the supplied arguments to fit url notation
     $query = $ARGV[0];
 
 }else{ # Otherwise let the user know they need to supply a search query
-    die "You need to supply a query search item: ./gsearch.pl [your search query here]\n";
+    die "You need to supply a query search item: ./gsearch.pl <your search query here>\n";
 }
 
 # Build out our URL
@@ -37,7 +37,8 @@ $query =~ s/\+/ /g; # Remove the + signs we inserted, so we can display the user
 
 
 # Print out some Meta-data just for kicks
-print "\nSearch Time: $data->{searchInformation}->{searchTime}\n";
+print"\n---------------BEEP BOOP---------------\n\n";
+print "Search Time: $data->{searchInformation}->{searchTime}\n";
 print "Total Results: $data->{searchInformation}->{totalResults}\n\n";
 print "Displaying Google results for \"$query\": \n\n";
 
