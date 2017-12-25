@@ -27,8 +27,13 @@ my $URL = "https://www.googleapis.com/customsearch/v1?key=$apiKey&cx=$engineID&q
 
 
 # Pull data from the URL, save it to a variable, then decode that variable
+
 my $data = get($URL);
+
+# If Getting an ERROR, make sure you have LWP::Protocol::https installed
+#  --- sudo cpan LWP::Protocol::https 
 die "Could not get $URL! Please try a different search query" unless defined $data;
+
 $data = decode_json($data);
                             
 
