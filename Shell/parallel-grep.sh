@@ -20,7 +20,7 @@ split -d -n $nodes $filename
 for i in $(seq 0 $end);
 do
     #Will show the line number that the patter was found in
-    grep --color=always -n $pattern x0$((i)) >> par-grep-output.txt &
+    grep --color=always -n "$pattern" x0$((i)) >> par-grep-output.txt &
 done
 
 wait
