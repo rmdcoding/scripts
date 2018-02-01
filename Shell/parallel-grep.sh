@@ -1,13 +1,13 @@
 #!/bin/bash
-:'
-Written by Rigobert M.D.
 
-This script is an example of a parallel bash script, spawning processes.
-Parallel grep beta, proof of cocept. Still need to be able to show colored
-pattern in stdout or output file.
+#Written by Rigobert M.D.
 
-Usage: ./parallel-grep.sh [number of nodes] [pattern] [filename]
-'
+#This script is an example of a parallel bash script, spawning processes.
+#Parallel grep beta, proof of cocept. Still need to be able to show colored
+#pattern in stdout or output file.
+
+#Usage: ./parallel-grep.sh [number of nodes] [pattern] [filename]
+
 nodes=$1
 end=$((nodes - 1)) 
 filename=$3
@@ -20,7 +20,7 @@ split -d -n $nodes $filename
 for i in $(seq 0 $end);
 do
     #Will show the line number that the patter was found in
-    grep -n $pattern x0$((i)) >> par-grep-output.txt &
+    grep --color=always -n $pattern x0$((i)) >> par-grep-output.txt &
 done
 
 wait
